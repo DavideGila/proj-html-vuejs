@@ -1,4 +1,6 @@
 <template>
+<header>
+    <!-- Navbar -->
     <nav>
         <div class="d-flex justify-content-between align-items-center p-4">
             <img src="/images/logo.svg" alt="Logo" id="logo">
@@ -15,6 +17,9 @@
             </div>
         </div>
     </nav>
+
+    <div>Carousel </div>
+</header>
 </template>
 
 <script>
