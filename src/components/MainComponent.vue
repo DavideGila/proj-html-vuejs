@@ -7,68 +7,13 @@
                 <h2 class="text-center text-uppercase">This is what we do</h2>
                 <!-- Cards -->
                 <div class="row mb-5">
-                    <div class="col-4 text-center">
+                    <div v-for="element in store.firstSection" class="col-4 text-center">
                         <div class="py-4">
-                            <img :src="store.firstSection.firstimg" alt="" style="width: 80px; height: 80px;">
+                            <img :src="element.img" alt="" style="width: 80px; height: 80px;">
                         </div>
                         <div>
                             <div class="text-uppercase">
-                                <h6>{{ store.firstSection.firsttitle }}</h6>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, quia.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="py-4">
-                            <img :src="store.firstSection.secondimg" alt="" style="width: 80px; height: 80px;">
-                        </div>
-                        <div>
-                            <div class="text-uppercase">
-                                <h6>{{ store.firstSection.secondtitle }}</h6>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, quia.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="py-4">
-                            <img :src="store.firstSection.thirdimg" alt="" style="width: 80px; height: 80px;">
-                        </div>
-                        <div>
-                            <div class="text-uppercase">
-                                <h6>{{ store.firstSection.thirdtitle }}</h6>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, quia.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="py-4">
-                            <img :src="store.firstSection.fourthimg" alt="" style="width: 80px; height: 80px;">
-                        </div>
-                        <div>
-                            <div class="text-uppercase">
-                                <h6>{{ store.firstSection.fourthtitle }}</h6>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, quia.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="py-4">
-                            <img :src="store.firstSection.fifthimg" alt="" style="width: 80px; height: 80px;">
-                        </div>
-                        <div>
-                            <div class="text-uppercase">
-                                <h6>{{ store.firstSection.fifthtitle }}</h6>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, quia.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="py-4">
-                            <img :src="store.firstSection.sixthimg" alt="" style="width: 80px; height: 80px;">
-                        </div>
-                        <div>
-                            <div class="text-uppercase">
-                                <h6>{{ store.firstSection.sixthtitle }}</h6>
+                                <h6>{{ element.title }}</h6>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, quia.</p>
                         </div>
@@ -85,12 +30,28 @@
                     <div class="col-6 my-5 py-5 align-items-center">
                         <h4 class="text-uppercase mb-4">About us</h4>
                         <h2 class="text-uppercase mb-4">High quality cinematics</h2>
-                        <p class="lh-lg">Orci varius penatibus et magnis dis parturient In the montes, nascetur ridiculus mus. Nulla
+                        <p class="lh-lg">Orci varius penatibus et magnis dis parturient In the montes, nascetur ridiculus
+                            mus. Nulla
                             A nisi ut mi efficitur hendrerit. nunc urna. quisque a partr hendrerit purus erat, nec dapibus
                             sem sed. phasellus sed eli molestie, porttitor ligula of the egestas, mattis augue. quisque et
                             rhoncus justo. suspendisse luctus pharetra eleme tcondimentum.
                         </p>
                         <button class="btn btn-light text-uppercase rounded-0 p-3 px-5 my-3">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Section -->
+        <section class="mt-5">
+            <div class="container">
+                <h4 class="text-center text-uppercase">Your Watchlist</h4>
+                <h2 class="text-center text-uppercase">Best Hits Movies</h2>
+                <div class="row">
+                    <div v-for="element in store.thirdSection" class="col-4 text-center p-0">
+                        <img :src="element.img" alt="">
+                        <h6 class="text-uppercase">{{ element.title }}</h6>
+                        <p>{{ element.p }}</p>
                     </div>
                 </div>
             </div>
