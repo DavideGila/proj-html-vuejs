@@ -36,32 +36,32 @@ export const store = reactive({
   ],
   thirdSection: [
     {
-      img: "/public/images/Gallery-01.jpg",
+      img: "/images/Gallery-01.jpg",
       title: "Seventeeth Summer",
       p: "Commercial, Music Video.",
     },
     {
-      img: "/public/images/Gallery-02.jpg",
+      img: "/images/Gallery-02.jpg",
       title: "A message to Space",
       p: "Short Film",
     },
     {
-      img: "/public/images/Gallery-03.jpg",
+      img: "/images/Gallery-03.jpg",
       title: "The Most Beautiful Thing",
       p: "Music Video",
     },
     {
-      img: "/public/images/Gallery-04.jpg",
+      img: "/images/Gallery-04.jpg",
       title: "Permission to speak",
       p: "Documentary",
     },
     {
-      img: "/public/images/Gallery-05.jpg",
+      img: "/images/Gallery-05.jpg",
       title: "Explore our Space",
       p: "Film noir",
     },
     {
-      img: "/public/images/Gallery-06.jpg",
+      img: "/images/Gallery-06.jpg",
       title: "Film Prodution",
       p: "Blaxploitation",
     },
