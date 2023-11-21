@@ -47,11 +47,11 @@
             <div class="container">
                 <h4 class="text-center text-uppercase">Your Watchlist</h4>
                 <h2 class="text-center text-uppercase">Best Hits Movies</h2>
-                <div class="row">
+                <div class="row m-3">
                     <div v-for="element in store.thirdSection" class="col-4 text-center p-0">
-                        <img :src="element.img" alt="">
-                        <h6 class="text-uppercase">{{ element.title }}</h6>
-                        <p>{{ element.p }}</p>
+                        <img :src="element.img" alt="" style="width: 94%;" class="pb-3">
+                        <h6 class="text-uppercase pb-2">{{ element.title }}</h6>
+                        <p class="pb-3">{{ element.p }}</p>
                     </div>
                 </div>
             </div>
