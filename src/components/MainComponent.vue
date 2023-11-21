@@ -60,22 +60,42 @@
         <!-- Fourth Section -->
         <section class="parallax-fourth-section">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center text-center text-white" style="height: 300px;">
+                <div class="d-flex justify-content-between align-items-center text-center text-white"
+                    style="height: 300px;">
                     <div>
-                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='780' :duration='2'></vue3-autocounter></span>
+                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='780'
+                                :duration='2'></vue3-autocounter></span>
                         <h6 class="text-uppercase">Satisfied Clients</h6>
                     </div>
                     <div>
-                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='20' :duration='2'></vue3-autocounter>+</span>
+                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='20'
+                                :duration='2'></vue3-autocounter>+</span>
                         <h6 class="text-uppercase">Our Projects</h6>
                     </div>
                     <div>
-                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='10000' :duration='2'></vue3-autocounter></span>
+                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='10000'
+                                :duration='2'></vue3-autocounter></span>
                         <h6 class="text-uppercase">Cup of Coffee</h6>
                     </div>
                     <div>
-                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='12' :duration='2'></vue3-autocounter></span>
+                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='12'
+                                :duration='2'></vue3-autocounter></span>
                         <h6 class="text-uppercase">Our Awards</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fifth Section -->
+        <section>
+            <div class="container mt-5">
+                <h4 class="text-center text-uppercase">The Pericuros</h4>
+                <h2 class="text-center text-uppercase">Meet the Team</h2>
+                <div class="row text-center">
+                    <div v-for="member in store.teamMembers" class="col-3">
+                        <img :src="member.img" alt="" class="w-100">
+                        <h6 class="text-uppercase">{{ member.name }}</h6>
+                        <p>{{ member.job }}</p>
                     </div>
                 </div>
             </div>
@@ -96,8 +116,8 @@ export default defineComponent({
         }
     },
     components: {
-    'vue3-autocounter': Vue3autocounter
-  }
+        'vue3-autocounter': Vue3autocounter
+    }
 
 })
 </script>
@@ -141,7 +161,7 @@ h6 {
     font-weight: 400;
 }
 
-.parallax-fourth-section{
+.parallax-fourth-section {
     background-image: url('/images/Parallax-01.jpg');
     min-height: 300px;
     background-attachment: fixed;
@@ -150,8 +170,7 @@ h6 {
     background-size: cover;
 }
 
-.counter{
+.counter {
     font-size: 55px;
     font-weight: 600;
-}
-</style>
+}</style>
