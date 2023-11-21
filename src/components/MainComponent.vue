@@ -56,19 +56,50 @@
                 </div>
             </div>
         </section>
+
+        <!-- Fourth Section -->
+        <section class="parallax-fourth-section">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center text-center text-white" style="height: 300px;">
+                    <div>
+                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='780' :duration='2'></vue3-autocounter></span>
+                        <div>Satisfied Clients</div>
+                    </div>
+                    <div>
+                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='20' :duration='2'></vue3-autocounter>+</span>
+                        <div>Our Projects</div>
+                    </div>
+                    <div>
+                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='10000' :duration='2'></vue3-autocounter></span>
+                        <div>Cup of Coffee</div>
+                    </div>
+                    <div>
+                        <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='12' :duration='2'></vue3-autocounter></span>
+                        <div>Our Awards</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
 <script>
 import { store } from '../data/store'
+import { defineComponent } from 'vue';
+import Vue3autocounter from 'vue3-autocounter';
 
-export default {
+
+export default defineComponent({
     data() {
         return {
-            store
+            store,
         }
     },
-}
+    components: {
+    'vue3-autocounter': Vue3autocounter
+  }
+
+})
 </script>
 
 <style lang="scss">
@@ -108,5 +139,19 @@ h6 {
 .col-6 p {
     font-size: 17px;
     font-weight: 400;
+}
+
+.parallax-fourth-section{
+    background-image: url('/images/Parallax-01.jpg');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.counter{
+    font-size: 55px;
+    font-weight: 600;
 }
 </style>
