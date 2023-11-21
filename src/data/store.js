@@ -66,4 +66,26 @@ export const store = reactive({
       p: "Blaxploitation",
     },
   ],
+  teamMembers:[
+    {
+      img: '/public/images/Team-01.jpg',
+      name: 'Fabricio Guerra',
+      job: 'Main Director'
+    },
+    {
+      img: '/public/images/Team-02.jpg',
+      name: 'Umberto Pagoda',
+      job: 'Main Writer'
+    },
+    {
+      img: '/public/images/Team-03.jpg',
+      name: 'Gloria Riccasso',
+      job: 'Main Producer'
+    },
+    {
+      img: '/public/images/Team-04.jpg',
+      name: 'Lio Napoin',
+      job: 'Cameraman'
+    }
+  ]
 });
