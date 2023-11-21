@@ -63,19 +63,19 @@
                 <div class="d-flex justify-content-between align-items-center text-center text-white" style="height: 300px;">
                     <div>
                         <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='780' :duration='2'></vue3-autocounter></span>
-                        <div>Satisfied Clients</div>
+                        <h6 class="text-uppercase">Satisfied Clients</h6>
                     </div>
                     <div>
                         <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='20' :duration='2'></vue3-autocounter>+</span>
-                        <div>Our Projects</div>
+                        <h6 class="text-uppercase">Our Projects</h6>
                     </div>
                     <div>
                         <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='10000' :duration='2'></vue3-autocounter></span>
-                        <div>Cup of Coffee</div>
+                        <h6 class="text-uppercase">Cup of Coffee</h6>
                     </div>
                     <div>
                         <span class="counter"><vue3-autocounter :startAmount='0' :endAmount='12' :duration='2'></vue3-autocounter></span>
-                        <div>Our Awards</div>
+                        <h6 class="text-uppercase">Our Awards</h6>
                     </div>
                 </div>
             </div>
