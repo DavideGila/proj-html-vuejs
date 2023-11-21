@@ -1,33 +1,69 @@
-import {reactive} from 'vue';
+import { reactive } from "vue";
 export const store = reactive({
-    navList: [
-        'Home',
-        'Blog',
-        'Pages',
-        'About',
-        'Contacts',
-        'Gallery',
-        'Shop'
-    ],
-    navIcon: [
-        '/images/image (8).svg',
-        '/images/image (9).svg',
-        '/images/image (10).svg',
-        '/images/image (11).svg',
-        '/images/image (12).svg'
-    ],
-    firstSection: {
-        firstimg: '/images/image (14).svg',
-        firsttitle:'Array of equipment',
-        secondimg: '/images/image (16).svg',
-        secondtitle: 'New technologies',
-        thirdimg: '/images/image (18).svg',
-        thirdtitle:'Versitile actors',
-        fourthimg: '/images/image (15).svg',
-        fourthtitle:'Top directors',
-        fifthimg: '/images/image (17).svg',
-        fifthtitle: 'Minute editing',
-        sixthimg: '/images/image (19).svg',
-        sixthtitle:'Versitile actors'
+  navList: ["Home", "Blog", "Pages", "About", "Contacts", "Gallery", "Shop"],
+  navIcon: [
+    "/images/image (8).svg",
+    "/images/image (9).svg",
+    "/images/image (10).svg",
+    "/images/image (11).svg",
+    "/images/image (12).svg",
+  ],
+  firstSection: [
+    {
+      img: "/images/image (14).svg",
+      title: "Array of equipment",
     },
-})
+    {
+      img: "/images/image (16).svg",
+      title: "New technologies",
+    },
+    {
+      img: "/images/image (18).svg",
+      title: "Versitile actors",
+    },
+    {
+      img: "/images/image (15).svg",
+      title: "Top directors",
+    },
+    {
+      img: "/images/image (17).svg",
+      title: "Minute editing",
+    },
+    {
+      img: "/images/image (19).svg",
+      title: "Versitile actors",
+    },
+  ],
+  thirdSection: [
+    {
+      img: "/public/images/Gallery-01.jpg",
+      title: "Seventeeth Summer",
+      p: "Commercial, Music Video.",
+    },
+    {
+      img: "/public/images/Gallery-02.jpg",
+      title: "A message to Space",
+      p: "Short Film",
+    },
+    {
+      img: "/public/images/Gallery-03.jpg",
+      title: "The Most Beautiful Thing",
+      p: "Music Video",
+    },
+    {
+      img: "/public/images/Gallery-04.jpg",
+      title: "Permission to speak",
+      p: "Documentary",
+    },
+    {
+      img: "/public/images/Gallery-05.jpg",
+      title: "Explore our Space",
+      p: "Film noir",
+    },
+    {
+      img: "/public/images/Gallery-06.jpg",
+      title: "Film Prodution",
+      p: "Blaxploitation",
+    },
+  ],
+});
