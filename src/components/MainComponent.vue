@@ -93,13 +93,16 @@
                 <h2 class="text-center text-uppercase">Meet the Team</h2>
                 <div class="row text-center">
                     <div v-for="member in store.teamMembers" class="col-3">
-                        <img :src="member.img" alt="" class="w-100">
-                        <h6 class="text-uppercase">{{ member.name }}</h6>
+                        <img :src="member.img" alt="" class="w-100 pb-3">
+                        <h6 class="text-uppercase pb-2">{{ member.name }}</h6>
                         <p>{{ member.job }}</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Sixth Section -->
+        <SliderComponent />
     </main>
 </template>
 
@@ -107,6 +110,7 @@
 import { store } from '../data/store'
 import { defineComponent } from 'vue';
 import Vue3autocounter from 'vue3-autocounter';
+import SliderComponent from './main/SliderComponents.vue';
 
 
 export default defineComponent({
@@ -116,9 +120,9 @@ export default defineComponent({
         }
     },
     components: {
-        'vue3-autocounter': Vue3autocounter
-    }
-
+        'vue3-autocounter': Vue3autocounter,
+        SliderComponent
+    },
 })
 </script>
 
@@ -173,4 +177,5 @@ h6 {
 .counter {
     font-size: 55px;
     font-weight: 600;
-}</style>
+}
+</style>
