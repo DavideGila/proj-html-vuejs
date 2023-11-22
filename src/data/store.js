@@ -68,24 +68,44 @@ export const store = reactive({
   ],
   teamMembers:[
     {
-      img: '/public/images/Team-01.jpg',
+      img: '/images/Team-01.jpg',
       name: 'Fabricio Guerra',
       job: 'Main Director'
     },
     {
-      img: '/public/images/Team-02.jpg',
+      img: '/images/Team-02.jpg',
       name: 'Umberto Pagoda',
       job: 'Main Writer'
     },
     {
-      img: '/public/images/Team-03.jpg',
+      img: '/images/Team-03.jpg',
       name: 'Gloria Riccasso',
       job: 'Main Producer'
     },
     {
-      img: '/public/images/Team-04.jpg',
+      img: '/images/Team-04.jpg',
       name: 'Lio Napoin',
       job: 'Cameraman'
+    }
+  ],
+  designerComments: [
+    {
+      comment: 'Curabitur bibendum ex ut sapien blandit viverra. Nunc lobortis mi dui, id Etiam tempor sit amet metus in bibendum. Nunc eros risus, pellentesque a augue Pellentesque fringilla eget mi eu mollis. Mauris commodo',
+      img: '/images/01.jpg',
+      name: 'John Doe',
+      job: 'Designer'
+    },
+    {
+      comment: 'Curabitur bibendum ex ut sapien blandit viverra. Nunc lobortis mi dui, id Etiam tempor sit amet metus in bibendum. Nunc eros risus, pellentesque a augue Pellentesque fringilla eget mi eu mollis. Mauris commodo',
+      img: '/images/02.jpg',
+      name: 'John Doe',
+      job: 'Designer'
+    },
+    {
+      comment: 'Curabitur bibendum ex ut sapien blandit viverra. Nunc lobortis mi dui, id Etiam tempor sit amet metus in bibendum. Nunc eros risus, pellentesque a augue Pellentesque fringilla eget mi eu mollis. Mauris commodo',
+      img: '/images/03.jpg',
+      name: 'John Doe',
+      job: 'Designer'
     }
   ]
 });
