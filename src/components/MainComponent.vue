@@ -110,7 +110,7 @@
 import { store } from '../data/store'
 import { defineComponent } from 'vue';
 import Vue3autocounter from 'vue3-autocounter';
-import SliderComponent from './main/SliderComponents.vue';
+import SliderComponent from './main/SliderComponent.vue';
 
 
 export default defineComponent({
