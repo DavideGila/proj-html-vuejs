@@ -26,19 +26,28 @@
         </div>
     </section>
     <section>
-            <div class="container my-5">
-                <h4 class="text-center text-uppercase">Latest News</h4>
-                <h2 class="text-center text-uppercase">Articles Updated Daily</h2>
-                <div class="row flex-nowrap">
-                    <div v-for="article in store.articles" class="col-3" style="width: 480px;">
-                        <img :src="article.img" alt="" class="w-100">
-                        <p>{{ article.date }}</p>
-                        <h6>{{ article.title }}</h6>
-                        <p>{{ article.p }}</p>
-                    </div>
-                </div>  
+        <div class="container my-5">
+            <h4 class="text-center text-uppercase">Latest News</h4>
+            <h2 class="text-center text-uppercase">Articles Updated Daily</h2>
+            <div class="row flex-nowrap">
+                <div v-for="article in store.articles" class="col-3" style="width: 480px;">
+                    <img :src="article.img" alt="" class="w-100">
+                    <p>{{ article.date }}</p>
+                    <h6>{{ article.title }}</h6>
+                    <p>{{ article.p }}</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="parallax-eighth-section">
+        <div class="container my-5">
+            <div class="d-flex justify-content-between align-items-center" style="height: 300px;">
+                <div v-for="icon in store.parallaxEighth">
+                    <span><img :src="icon.img" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -71,6 +80,8 @@ export default {
 </script>
 
 <style lang="scss">
+@use '../../assets/styles/partials/variables' as *;
+
 .parallax-sixth-section {
     background-image: url('/images/Parallax-02.jpg');
     min-height: 600px;
@@ -99,5 +110,14 @@ export default {
 
 .active {
     opacity: 1;
+}
+
+.parallax-eighth-section {
+    background-image: url('/images/Parallax-03.jpg');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 </style>
