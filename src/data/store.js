@@ -107,5 +107,49 @@ export const store = reactive({
       name: 'John Doe',
       job: 'Designer'
     }
+  ],
+  articles: [
+    {
+      img: '/images/blog07.jpg',
+      date: 'November 06, 2021 By Admin',
+      title: 'Recap Your Latest Company Event',
+      p: 'Suspendisse dictum dictum tempor. Ut non faucibus arcu, id elementum est. Suspendise sed'
+    },
+    {
+      img: '/images/blog01.jpg',
+      date: 'May 27, 2022 By Admin',
+      title: 'How to Edit a Film Score to Serve',
+      p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut'
+    },
+    {
+      img: '/images/blog02.jpg',
+      date: 'May 07, 2022 By Admin',
+      title: 'Are you Ready to make it awesome',
+      p: 'Design is our playground. While we create an awesome experience, we like having fun. No animals'
+    },
+    {
+      img: '/images/blog03.jpg',
+      date: 'April 10, 2022 By Admin',
+      title: 'Last Video Website you need for',
+      p: 'In as name to here them deny wise this. As rapid woody my he me which. Men but they fail shew just'
+    },
+    {
+      img: '/images/blog04.jpg',
+      date: 'March 01, 2022 By Admin',
+      title: 'Band Uprising to Cult Status',
+      p: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, placeat.'
+    },
+    {
+      img: '/images/blog05.jpg',
+      date: 'February 14, 2022 By Admin',
+      title: 'Bringing the stage to life',
+      p: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, placeat.'
+    },
+    {
+      img: '/images/blog06.jpg',
+      date: 'December 07, 2021 By Admin',
+      title: 'Cadenze Rios Picked For The Next Picture',
+      p: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, placeat.'
+    }
   ]
 });
