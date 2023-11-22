@@ -88,7 +88,7 @@
 
         <!-- Fifth Section -->
         <section>
-            <div class="container mt-5">
+            <div class="container my-5">
                 <h4 class="text-center text-uppercase">The Pericuros</h4>
                 <h2 class="text-center text-uppercase">Meet the Team</h2>
                 <div class="row text-center">
@@ -101,7 +101,7 @@
             </div>
         </section>
 
-        <!-- Sixth Section -->
+        <!-- Sixth, Seventh Section -->
         <SliderComponent />
     </main>
 </template>
