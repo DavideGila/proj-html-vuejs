@@ -151,5 +151,22 @@ export const store = reactive({
       title: 'Cadenze Rios Picked For The Next Picture',
       p: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, placeat.'
     }
+  ],
+  parallaxEighth: [
+    {
+      img: '/images/01.png'
+    },
+    {
+      img: '/images/02.png'
+    },
+    {
+      img: '/images/03.png'
+    },
+    {
+      img: '/images/04.png'
+    },
+    {
+      img: '/images/05.png'
+    }
   ]
 });
