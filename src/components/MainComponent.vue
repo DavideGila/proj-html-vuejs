@@ -101,7 +101,7 @@
             </div>
         </section>
 
-        <!-- Sixth, Seventh Section -->
+        <!-- Sixth, Seventh, Eighth Section -->
         <SliderComponent />
     </main>
 </template>
