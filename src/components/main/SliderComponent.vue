@@ -25,30 +25,19 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container my-5">
-            <h4 class="text-center text-uppercase">Latest News</h4>
-            <h2 class="text-center text-uppercase">Articles Updated Daily</h2>
-            <div class="row flex-nowrap">
-                <div v-for="article in store.articles" class="col-3" style="width: 480px;">
-                    <img :src="article.img" alt="" class="w-100">
-                    <p>{{ article.date }}</p>
-                    <h6>{{ article.title }}</h6>
-                    <p>{{ article.p }}</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <SecondSliderComponent />
     <ThirdSliderComponent />
 </template>
 
 <script>
+import SecondSliderComponent from './SecondSliderComponent.vue';
 import ThirdSliderComponent from './ThirdSliderComponent.vue';
 import { store } from '../../data/store'
 
 
 export default {
     components: {
+        SecondSliderComponent,
         ThirdSliderComponent
     },
     data() {
