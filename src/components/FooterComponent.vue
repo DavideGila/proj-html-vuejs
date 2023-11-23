@@ -68,7 +68,7 @@ h6 {
     background-color: var(--global-palette2);
 }
 
-li {
+.footer-bg li {
     line-height: 50px;
     font-size: 17px;
     font-weight: 300;
