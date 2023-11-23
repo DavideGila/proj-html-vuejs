@@ -8,6 +8,10 @@ export const store = reactive({
     "/images/image (11).svg",
     "/images/image (12).svg",
   ],
+  heroBackground: [
+    'hero-bg-1',
+    'hero-bg-2'
+  ],
   firstSection: [
     {
       img: "/images/image (14).svg",
