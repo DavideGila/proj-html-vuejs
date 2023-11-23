@@ -179,7 +179,7 @@ export const store = reactive({
       info: 'Call Us On 0800 840 1010'
     },
     {
-      img: '/public/images/footer-envelope-soli.svg',
+      img: '/images/footer-envelope-soli.svg',
       info: 'Demo@Example.Com'
     }     
   ],
