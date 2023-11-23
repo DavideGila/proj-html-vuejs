@@ -2,7 +2,7 @@
     <main>
         <!-- First Section -->
         <section>
-            <div class="container">
+            <div class="container my-5">
                 <h4 class="text-center text-uppercase">Pelicula Studio</h4>
                 <h2 class="text-center text-uppercase">This is what we do</h2>
                 <!-- Cards -->
