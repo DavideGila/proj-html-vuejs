@@ -1,29 +1,30 @@
 <template>
     <section class="parallax-sixth-section">
-        <div class="container text-white position relative d-flex flex-column justify-content-center"
-            style="height: 600px; padding: 0 280px 0 280px;" v-for="element in store.designerComments">
-            <div class="text-center">
-                <img src="/images/image (20).svg" alt="" style="width: 50px; height: 50px;" id="virgolette" class="mb-4">
-                <p>{{ element.comment }}</p>
-            </div>
-
-            <div class="d-inline-block d-flex justify-content-center">
-                <div class="pe-2">
-                    <img :src="element.img" alt="" class="rounded-circle">
+        <swiper  
+        :pagination="{
+            clickable: true,
+        }" 
+        :modules="modules" 
+        class="mySwiper">
+            <swiper-slide class="container-fluid text-white d-flex flex-column justify-content-center"
+                style="height: 600px; padding: 0 550px;" v-for="element in store.designerComments">
+                <img src="/images/image (20).svg" alt="" style="width: 65px; height: 50px;" id="virgolette" class="mb-4">
+                <div class="text-center">
+                    <p>{{ element.comment }}</p>
                 </div>
 
-                <div>
-                    <h6 class="text-uppercase mb-1">{{ element.name }}</h6>
-                    <p>{{ element.job }}</p>
-                </div>
-            </div>
+                <div class="d-inline-block d-flex justify-content-center align-items-start">
+                    <div class="pe-2">
+                        <img :src="element.img" alt="" class="rounded-circle">
+                    </div>
 
-            <div class="text-center">
-                <span @click="selectCircle(0)" class="d-inline-block circle mx-2" :class="{ 'active': active0 }"></span>
-                <span @click="selectCircle(1)" class="d-inline-block circle mx-2" :class="{ 'active': active1 }"></span>
-                <span @click="selectCircle(2)" class="d-inline-block circle mx-2" :class="{ 'active': active2 }"></span>
-            </div>
-        </div>
+                    <div>
+                        <h6 class="text-uppercase mb-1">{{ element.name }}</h6>
+                        <p>{{ element.job }}</p>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper>
     </section>
     <SecondSliderComponent />
     <ThirdSliderComponent />
@@ -33,34 +34,27 @@
 import SecondSliderComponent from './SecondSliderComponent.vue';
 import ThirdSliderComponent from './ThirdSliderComponent.vue';
 import { store } from '../../data/store'
-
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 export default {
     components: {
         SecondSliderComponent,
-        ThirdSliderComponent
+        ThirdSliderComponent,
+        Swiper,
+        SwiperSlide
     },
     data() {
         return {
-            store,
-            active0: false,
-            active1: false,
-            active2: false
+            store
         }
     },
-    methods: {
-        selectCircle(num) {
-            this.active0 = false
-            this.active1 = false
-            this.active2 = false
-            if (num === 0) {
-                this.active0 = true
-            } else if (num === 1) {
-                this.active1 = true
-            } else if (num === 2) {
-                this.active2 = true
-            }
-        }
+    setup() {
+        return {
+            modules: [Pagination],
+        };
     },
 }
 </script>
@@ -81,20 +75,18 @@ export default {
     filter: invert(93%) sepia(100%) saturate(29%) hue-rotate(136deg) brightness(107%) contrast(110%);
 }
 
-.circle {
-    height: 10px;
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 420px;
+}
+
+.swiper-pagination-bullet{
     width: 10px;
-    border-radius: 50%;
+    height: 10px;
     background-color: white;
-    opacity: 0.5;
 }
 
-.circle:hover {
+.swiper-pagination-bullet:hover{
     background-color: white;
-    opacity: 1;
-}
-
-.active {
     opacity: 1;
 }
 </style>
