@@ -168,5 +168,33 @@ export const store = reactive({
     {
       img: '/images/05.png'
     }
+  ],
+  footerContact: [
+    {
+      img: '/images/footer-location-dot-solid.svg',
+      info: '2/45 Tower Street, New York USA'
+    },
+    {
+      img: '/images/footer-phone-solid.svg',
+      info: 'Call Us On 0800 840 1010'
+    },
+    {
+      img: '/public/images/footer-envelope-soli.svg',
+      info: 'Demo@Example.Com'
+    }     
+  ],
+  footerInfo: [
+    'Product Support',
+    'Checkout',
+    'Report Abuse',
+    'Redeem Voucher',
+    'Order Status'
+  ],
+  footerLinks: [
+    'Policies & Rules',
+    'Privacy Policy',
+    'License Policy',
+    'My Account',
+    'Locality'
   ]
 });
