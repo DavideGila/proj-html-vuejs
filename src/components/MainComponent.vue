@@ -103,6 +103,9 @@
 
         <!-- Sixth, Seventh, Eighth Section -->
         <SliderComponent />
+
+        <!-- Ninth Section -->
+        <FormComponent />
     </main>
 </template>
 
@@ -111,6 +114,7 @@ import { store } from '../data/store'
 import { defineComponent } from 'vue';
 import Vue3autocounter from 'vue3-autocounter';
 import SliderComponent from './main/SliderComponent.vue';
+import FormComponent from './main/FormComponent.vue';
 
 
 export default defineComponent({
@@ -121,7 +125,8 @@ export default defineComponent({
     },
     components: {
         'vue3-autocounter': Vue3autocounter,
-        SliderComponent
+        SliderComponent,
+        FormComponent
     },
 })
 </script>
