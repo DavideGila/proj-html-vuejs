@@ -17,15 +17,18 @@
             </div>
         </div>
     </nav>
-
-    <div>Carousel </div>
+    <HeroComponent />
 </header>
 </template>
 
 <script>
 import { store } from '../data/store'
+import HeroComponent from './header/HeroComponent.vue'
 
     export default {
+        components: {
+            HeroComponent
+        },
         data() {
             return {
                 store
